@@ -1,0 +1,692 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*===========================================
+Base CSS
+============================================*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+ color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  font-size: 14px;
+  overflow: hidden;
+  background: #fafafa;
+}
+label {
+  padding: 0;
+  margin: 0;
+}
+ul, li, ol {
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+a, img {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+bo {
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+input, select, textarea, button{
+  font-family: 'Muli', sans-serif;
+}
+input:focus, select:focus, textarea:focus, button:focus{
+  outline: 0;
+}
+
+a {
+  color: inherit;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+
+p {
+  margin-bottom: 1.5em; 
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Quicksand", Arial, sans-serif;
+  margin: 0 0 30px 0; 
+  font-size: 20px;
+}
+
+
+i.material-icons {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #777;
+}
+
+/*===========================================
+Text Styles CSS
+============================================*/
+.t-title-size{
+  font-size: 18px;
+}
+.t-bold{
+  font-weight: 600;
+}
+.t-normal{
+  font-weight: normal;
+}
+.t-center{
+  text-align: center;
+}
+.t-right{
+  text-align: right;
+}
+
+/*===========================================
+Padding & Margins CSS
+============================================*/
+.p-5{
+  padding: 5px;
+}
+.p-10{
+  padding: 10px;
+}
+.p-15{
+  padding: 15px;
+}
+.p-20{
+  padding: 20px;
+}
+.p-25{
+  padding: 25px;
+}
+.p-30{
+  padding: 30px;
+}
+.p-35{
+  padding: 35px;
+}
+.p-40{
+  padding: 40px;
+}
+.p-45{
+  padding: 45px;
+}
+.p-50{
+  padding: 50px;
+}
+
+.p-right5{
+  padding-right: 5px;
+}
+.p-right10{
+  padding-right: 10px;
+}
+.p-right15{
+  padding-right: 15px;
+}
+.p-right20{
+  padding-right: 20px;
+}
+.p-right25{
+  padding-right: 25px;
+}
+.p-right30{
+  padding-right: 30px;
+}
+
+.p-left5{
+  padding-left: 5px;
+}
+.p-left10{
+  padding-left: 10px;
+}
+.p-left15{
+  padding-left: 15px;
+}
+.p-left20{
+  padding-left: 20px;
+}
+.p-left25{
+  padding-left: 25px;
+}
+.p-left30{
+  padding-left: 30px;
+}
+
+.m-5{
+  margin: 5px;
+}
+.m-10{
+  margin: 10px;
+}
+.m-15{
+  margin: 15px;
+}
+.m-20{
+  margin: 20px;
+}
+.m-25{
+  margin: 25px;
+}
+.m-30{
+  margin: 30px;
+}
+.m-35{
+  margin: 35px;
+}
+.m-40{
+  margin: 40px;
+}
+.m-45{
+  margin: 45px;
+}
+.m-50{
+  margin: 50px;
+}
+
+/*===========================================
+Display Styles
+============================================*/
+.d-flex{
+  display: flex;
+}
+
+.d-flex-align-center{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.d-flex-align-center-column{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.flex-2{
+  flex: 2;
+}
+
+/*===========================================
+Page Styles
+============================================*/
+
+.wraper {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content {
+    width: 300px;
+    overflow-y: auto;
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid rgba(221, 221, 221, 0.38);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    margin-left: 10px;
+    background: #fff;
+    border-left: 1px solid rgba(221, 221, 221, 0.38);
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo a {
+    color: #fff;
+    text-align: right;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.nav {
+    flex: 1;
+    justify-content: flex-end;
+    margin: 50px 0px;
+}
+
+.nav ul li, .nav ul li a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul li a {
+    padding: 8px 0px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav ul li a:hover {
+    color: #000;
+}
+
+.nav ul li a:after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav ul li a:hover:after {
+    width: 100%;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.left-footer {
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.foot-contact, .social-icons ul, .copy-rights {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons ul li {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.foot-contact ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-contact ul li {
+    justify-content: flex-end;
+    display: flex;
+    margin: 2px 0px;
+}
+
+.foot-contact {
+   margin: 5px 0px;
+}
+
+.social-icons ul li a {
+    padding: 5px 8px;
+    font-size: 16px;
+}
+
+
+.social-icons ul li a:hover {
+  color: #000;
+  transform: scale(1.2) translateY(-5px);
+}
+
+.user-profile {
+    padding-left: 50px;
+}
+
+.sm-text {
+    letter-spacing: 2.1px;
+    font-weight: normal;
+    color: #222222;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 15px 0px;
+    color: #222222;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+.role {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.text {
+   
+    font-size: 15px;
+}
+
+.pr-list {
+    margin: 30px 0px;
+    
+}
+
+.pr-list ul li {
+    margin-bottom: 8px;
+}
+
+.pr-list ul li i {
+    width: 18px;
+}
+.social-icons-head ul {
+    display: flex;
+}
+
+.social-icons-head ul li a {
+    padding: 5px 10px;
+    font-size: 22px;
+    transition: all .3s;
+        display: flex;
+}
+
+.social-icons-head ul li:nth-child(1) a {
+    padding-left: 0;
+}
+
+.social-icons-head ul li a:hover {
+    color: #000;
+    transform: scale(1.2) translateY(-5px);
+}
+.sec-title {
+    margin-bottom: 50px;
+}
+
+.pg-title {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    color: #000;
+}
+
+.pg-sub-title {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+/*===========================================
+Skills Css (AboutPage)
+============================================*/
+.skills-table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+th {
+    background: #000000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+td {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/*===========================================
+Certificates (AboutPage)
+============================================*/
+.about-certi {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+.gallery img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*===========================================
+Slide Show (Project Page)
+============================================*/
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.active {
+  opacity: 1;
+}
+
+.prev, .next {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.prev { 
+  left: 10px; 
+}
+
+.next { 
+  right: 10px; 
+}
+
+.projHead {
+  font-size: 40px;
+}
+
+.container_pages {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.box:hover {
+  background-color: #555;
+}
+
+form {
+  max-width: 400px; 
+  margin: auto; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+}
+        
+label { 
+  font-weight: bold; 
+  display: block; 
+  margin-top: 10px; 
+}
+        
+input, textarea { 
+  width: 100%; 
+  padding: 8px; 
+  margin-top: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+        
+button {
+  margin-top: 10px; 
+  padding: 10px; 
+  width: 100%; 
+  background: blue; color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+        
+button:hover { 
+  background: darkblue; 
+}
+
+.copy-rights {
+  padding-top: 10px;
+}
+
+.colors {
+  padding-left: 55px;
+  padding-top: 10px;
+}
+
+.user-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.user-img img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover; 
+  border-radius: 2%; 
+}
+
+.my-logo img {
+  width: 140px;
+  height: 140px;
+}
+
+.my-logo {
+  text-align: center;
+}

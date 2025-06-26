@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio | Projects</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wraper">
+		<div class="container">
+		<div class="left-content p-30">
+			<div class="logo">
+				<a href="index.html">
+					<div class="my-logo flex-1"><img src="images/logo2.png"></div>
+					<span>My</span>
+					<span>Portfolio</span>
+				</a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="left-footer">
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://www.linkedin.com/in/jimuel-simbul-789b01350"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/jimuel.simbul.5"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://x.com/JSimbul123"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/jimuel-simbul-789b01350"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="foot-contact">
+					<ul>
+						<li>simbuljimuel123@gmail.com</li>
+						<li>0995 857 2292</li>
+					</ul>
+				</div>
+				
+                <div class="copy-rights">&copy;2025 Jimuel Simbul</div>
+			</div>
+		</div>
+		    <div class="main-content">
+			    <div class="section1 p-30" id="Home">
+			    <div class="sec-title">
+	                <div class="pg-sub-title">Projects</div>
+	                <div class="pg-title">My Work</div>
+			</div>
+            <h1 class="projHead">Bictalk<p>https://bictalk.wordpress.com</p></h1>
+			<p><a href="https://bictalk.wordpress.com" target="_blank" style="text-decoration: underline;">Visit Site</a></p>
+            <h3>Purpose</h3>
+            <p>This website was created as part of an academic requirement for our Web Development course. Built using WordPress, it serves as a practical application of the skills learned in designing, customizing, and managing a website.</p>
+            <h3>Features</h3>
+            <p>This website serves as an informational platform where users can explore interesting facts about cycling. To enhance user experience, I focused on improving the UI/UX design, making navigation intuitive and content easily accessible. The site also includes responsive design elements to ensure a seamless experience across different devices.</p>
+            <h3>Tools/Technologies Used</h3>
+            <p>This website was built using WordPress for content management and customization. I used Photoshop for image editing and optimization.</p>
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="images/projects/Bictalk 1.png" alt="Bictalk 1">
+                </div>
+                <div class="slide">
+                    <img src="images/projects/Bictalk 2.png" alt="Bictalk 2">
+                </div>
+                <div class="slide">
+                    <img src="images/projects/Bictalk 3.png" alt="Bictalk 3">
+                </div>
+                <div class="slide">
+                    <img src="images/projects/Bictalk 4.png" alt="Bictalk 4">
+                </div>
+        
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+            </div>
+
+			<div class="container_pages">
+				<a href="projects.html" class="box">1</a>
+				<a href="projects2.html" class="box">2</a>
+			</div>
+            <script>
+                let slideIndex = 0;
+                const slides = document.querySelectorAll('.slide');
+        
+                function changeSlide(step) {
+                    slides[slideIndex].classList.remove('active');
+                    slideIndex += step;
+                    if (slideIndex >= slides.length) slideIndex = 0;
+                    if (slideIndex < 0) slideIndex = slides.length - 1;
+                    slides[slideIndex].classList.add('active');
+                }
+        
+                function autoSlide() {
+                    changeSlide(1);
+                }
+        
+                setInterval(autoSlide, 4000);
+            </script>
+		</div>
+	</div>
+</div>
+</body>
+</html>

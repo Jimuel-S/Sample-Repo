@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio | Projects</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wraper">
+		<div class="container">
+		<div class="left-content p-30">
+			<div class="logo">
+				<a href="index.html">
+					<div class="my-logo flex-1"><img src="images/logo2.png"></div>
+					<span>My</span>
+					<span>Portfolio</span>
+				</a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="left-footer">
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://www.linkedin.com/in/jimuel-simbul-789b01350"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/jimuel.simbul.5"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://x.com/JSimbul123"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/jimuel-simbul-789b01350"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="foot-contact">
+					<ul>
+						<li>simbuljimuel123@gmail.com</li>
+						<li>0995 857 2292</li>
+					</ul>
+				</div>
+				
+                <div class="copy-rights">&copy;2025 Jimuel Simbul</div>
+			</div>
+		</div>
+		    <div class="main-content">
+			    <div class="section1 p-30" id="Home">
+			    <div class="sec-title">
+	                <div class="pg-sub-title">Projects</div>
+	                <div class="pg-title">My Work</div>
+			</div>
+            <h1 class="projHead">Cass Mago<p>https://cassmago.com</p></h1>
+			<p><a href="https://cassmago.com" target="_blank" style="text-decoration: underline;">Visit Site</a></p>
+            <h3>Purpose</h3>
+            <p>This was given to us as a group task consisting of four members, with work individually distributed. It serves as our Prelim Output.</p>
+            <h3>Features</h3>
+            <p>The Cassmago website serves as a promotional platform showcasing the company’s various projects. It highlights the company’s expertise, and completed works. The website includes a project gallery with high-quality images, and an about page that provides insights into Cassmago’s mission and values. To enhance user experience, the site features intuitive navigation, responsive design, and optimized loading speed, ensuring seamless browsing across all devices.</p>
+            <h3>Tools/Technologies Used</h3>
+            <p>We used WordPress to create the website and published it using Hostinger. For images, we used Photoshop. For team communication, we utilized GitHub and Discord.</p>
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="images/projects/Cassmago1.png" alt="Cassmago 1">
+                </div>
+                <div class="slide">
+                    <img src="images/projects/Cassmago2.png" alt="Cassmago 2">
+                </div>
+                <div class="slide">
+                    <img src="images/projects/Cassmago3.png" alt="Cassmago 3">
+                </div>
+                <div class="slide">
+                    <img src="images/projects/Cassmago4.png" alt="Cassmago 4">
+                </div>
+        
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+            </div>
+
+			<div class="container_pages">
+				<a href="projects.html" class="box">1</a>
+				<a href="projects2.html" class="box">2</a>
+			</div>
+            <script>
+                let slideIndex = 0;
+                const slides = document.querySelectorAll('.slide');
+        
+                function changeSlide(step) {
+                    slides[slideIndex].classList.remove('active');
+                    slideIndex += step;
+                    if (slideIndex >= slides.length) slideIndex = 0;
+                    if (slideIndex < 0) slideIndex = slides.length - 1;
+                    slides[slideIndex].classList.add('active');
+                }
+        
+                function autoSlide() {
+                    changeSlide(1);
+                }
+        
+                setInterval(autoSlide, 4000);
+            </script>
+		</div>
+	</div>
+</div>
+</body>
+</html>
